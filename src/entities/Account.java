@@ -37,8 +37,10 @@ public class Account {
 		balance += amount;
 	}
 	
-	public void withdraw(double amount) {
-		balance -= amount + 5.0;
+	public void withdraw (double amount) {
+		if (amount != 0.0) {
+		balance -= amount + 5.00;
+		}
 	}
 	
 	public String toString() {
